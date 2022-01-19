@@ -1,0 +1,183 @@
+
+table {
+    font-family: 'M PLUS 1', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    width: 300px;
+    height: 300px;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+.table-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+td h1 {
+    margin:0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.square {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.num {
+    width: 50px;
+    height: 15px;
+    font-size: 10px;
+    text-align: right;
+    color: white;
+    position: relative;
+    top: 2px;
+    right: 3px;
+    z-index: 1;
+}
+
+.char {
+    width: 50px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square::after {
+    content: ' ';
+    position: absolute;
+    top: -26px;
+    left: 25px;
+    border-width: 25px;
+    border-style: solid;
+    border-color:  transparent  transparent grey transparent;
+    border-radius: 5px;
+    transform: rotate(45deg);
+    
+}
+
+@keyframes zoom-effect {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.5, 1.5);
+    }
+    100% {
+            transform: scale(1.5, 1.5);
+    }
+}
+
+@keyframes zoom-desc-box {
+    0% {
+        transform: scale(0.7, 0.7);
+    }
+    50% {
+        transform: scale(0.7, 0.7);
+    }
+    100% {
+            transform: scale(0.7, 0.7);
+    }
+}
+    
+.td-effect:hover {
+    background-color: rgba(255, 255, 255);
+    cursor: pointer;
+    border: 1px solid rgba(37, 37, 37, 0.534);
+    border-radius: 5px;
+    animation-name: zoom-effect;
+    animation-duration: 2s;
+    transition-timing-function: ease;
+    z-index: 3;
+    }
+    
+.white-space {
+    background-color: white;
+    border: none;
+}
+
+.desc-box {
+    border: 2px solid rgba(0, 0, 0, 0.226);
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    display: none;
+    background-color: rgba(20, 18, 18, 0.637);
+    width: 530px; 
+    height: 99px;
+    /* animation-name: zoom-desc-box;
+    animation-duration: 2s;
+    transition-timing-function: ease; */
+}
+.desc-box h2 {
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.desc-box p {
+    font-size: 12px;
+    margin-top: 2px;
+    padding: 0 30px;
+}
+
+
+
+.title-background {
+    background-color: rgba(20, 18, 18, 0.336);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* span {
+    padding: 0px 15px 20px 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+} */
+
+.reduce-space {
+    height: 10px;
+}
+
+/* COLOR CLASSES */
+
+.nometals {
+    background-color: rgb(161,211,68);
+}
+.noblegases {
+    background-color: rgb(61,158,227);
+}
+.alkalinemetals {
+    background-color: rgb(241,178,0);
+}
+.alkaline-earthmetals {
+    background-color: rgb(234,218,0);
+}
+.semimetals {
+    background-color: rgb(77,182,172)
+}
+.lanthanides {
+    background-color: rgb(144,227,233)
+}
+.halogen {
+    background-color: rgb(112,203,235)
+}
+.othermetals {
+    background-color: rgb(162,199,211)
+}
+.transitionmetals {
+    background-color: rgb(235,142,142)
+}
+.actinides {
+    background-color: rgb(220,173,214)
+}

@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style3.css">
+    <!-- Link JS -->
+    <script src="../tabelaPeriodica/index.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="table-wrapper">
+        <table>
+                <tr>    
+                    <td>
+                        <div class="square nometals td-effect">
+                            <div id="1" class="num">1</div>
+                            <div class="char">H</div>
+                        </div>
+                    </td>
+                    <td  class="title-background" colspan="16">
+                        <div id="title">
+                            <h1>Tabela Periódica</h1>
+                        </div>
+                    </td>
+                    <td>
+                        <div onmouseout="hide('he')" onmouseover="show('he')" class="square noblegases td-effect">
+                            <div class="num">2</div>
+                            <div class="char">He</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <div class="square alkalinemetals td-effect">
+                            <div onmouseout="hide('li')" onmouseover="show('li')" class="num">3</div>
+                            <div class="char">Li</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div onmouseout="hide('be')" onmouseover="show('be')" class="square alkaline-earthmetals td-effect">
+                            <div class="num">4</div>
+                            <div class="char">Be</div>
+                        </div>
+                    </td>
+                    <td  class="white-space" colspan="10" rowspan="2">
+                        
+                            <div id="he" class="desc-box">
+                                <h2>He</h2>
+                                <p>O hélio (em grego: Ήλιος; romaniz.: Helios) é um elemento químico de símbolo He e que possui massa atómica igual a 4 u, apresentando número atômico 2.</p>
+                            </div>
+                            <div id="be" class="desc-box">
+                                <h2>Be</h2>
+                                <p>O berílio (do grego βερυλλoς, berilo) é um elemento químico de símbolo Be, com número atômico 4 (4 prótons e 4 elétrons) e massa atômica 9 u.</p>
+                            </div>
+                            <div id="li" class="desc-box">
+                                <h2>Li</h2>
+                                <p>O lítio (Li) é um elemento químico metálico pertencente ao grupo dos metais alcalinos, monovalente, de cor branco-prateada, brando, macio, atacado pelo ar húmido, reage lentamente com o oxigénio e a água.</p>
+                            </div>
+                            <div id="b" class="desc-box">
+                                <h2>B</h2>
+                                <p>O boro é um elemento químico de símbolo B, número atômico 5 (5 prótons e 5 elétrons) com massa atómica 11 u</p>
+                            </div>
+                            <div id="c" class="desc-box">
+                                <h2>C</h2>
+                                <p>O carbono (do latim carbo, carvão) é um elemento químico, símbolo C, número atômico 6 (6 prótons e 6 elétrons), massa atómica 12 u, sólido à temperatura ambiente.</p>
+                            </div>
+                            <div id="n" class="desc-box">
+                                <h2>N</h2>
+                                <p>O azoto, nitrogénio (português europeu) ou nitrogênio (português brasileiro) é um elemento químico com símbolo N, número atómico 7 e de massa atómica 14,00674 u.</p>
+                            </div>
+                            <div id="o" class="desc-box">
+                                <h2>O</h2>
+                                <p>Oxigénio é o elemento químico constituído por todos os átomos que possuem número atómico 8, isto é, com oito prótons.</p>
+                            </div>
+                            
+                            <div id="f" class="desc-box">
+                                <h2>F</h2>
+                                <p>Flúor é um elemento químico, símbolo F, de número atômico 9 (9 prótons e 9 elétrons) de massa atómica 19 u.</p>
+                            </div>
+                            <div id="ne" class="desc-box">
+                                <h2>Ne</h2>
+                                <p>O néon ou neônio é um elemento químico de símbolo Ne, número atômico 10 (10 prótons e 10 elétrons) com massa atômica 20 u.</p>
+                            </div>
+                            <div id="na" class="desc-box">
+                                <h2>Na</h2>
+                                <p>O sódio é um elemento químico de símbolo Na (Natrium em latim), de número atômico 11 (11 prótons e 11 elétrons), massa atômica 23 u.</p>
+                            </div>
+                            <div id="mg" class="desc-box">
+                                <h2>Mg</h2>
+                                <p>O magnésio é um elemento químico de símbolo Mg de número atômico 12 (12 prótons e 12 elétrons) com massa atômica 24 u.</p>
+                            </div>
+                            <div id="al" class="desc-box">
+                                <h2>Al</h2>
+                                <p>O alumínio é um elemento químico de símbolo Al e número atômico 13 (treze prótons e treze elétrons ) com massa 27 u.</p>
+                            </div>
+                            <div id="si" class="desc-box">
+                                <h2>Si</h2>
+                                <p>O silício (Si) é um elemento químico semimetálico, tetravalente e de cor cinzenta, que se localiza no grupo 14 e período 3 da Tabela Periódica. Este possui número atómico 14 e massa atómica 28,0855.</p>
+                            </div>
+                            <div id="p" class="desc-box">
+                                <h2>P</h2>
+                                <p>O fósforo (P) é um elemento químico não metálico, que se localiza no grupo 15 e período 3 da Tabela Periódica. Este possui número atómico 15 e massa atómica 30,973 761.</p>
+                            </div>
+                            <div id="p" class="desc-box">
+                                <h2>P</h2>
+                                <p>O fósforo (P) é um elemento químico não metálico, que se localiza no grupo 15 e período 3 da Tabela Periódica. Este possui número atómico 15 e massa atómica 30,973 761.</p>
+                            </div>
+                            
+                            <div id="s" class="desc-box">
+                                <h2>S</h2>
+                                <p>O enxofre é um elemento químico que tem como símbolo o S. Na tabela periódica, ele faz parte dos não-metais, na família dos calcogênios (família VI A).</p>
+                            </div>
+                            
+                            <div id="cl" class="desc-box">
+                                <h2>Cl</h2>
+                                <p>O cloro (do grego khlorós, esverdeado) é um elemento químico, símbolo Cl, número atômico 17. Está contido no grupo dos halogênios.</p>
+                            </div>
+                            <div id="ar" class="desc-box">
+                                <h2>Ar</h2>
+                                <p>O gás nobre Argônio possui símbolo atômico Ar, é incolor, inodoro e inerte, possui número atômico 18, massa atômica relativa 39,95 u.</p>
+                            </div>
+                            <div id="k" class="desc-box">
+                                <h2>K</h2>
+                                <p>O potássio é um elemento químico de símbolo K (do grego κάλιο "kalium", nome original da sua base KOH), número atômico 19.</p>
+                            </div>
+                            <div id="ca" class="desc-box">
+                                <h2>Ca</h2>
+                                <p>O cálcio é um elemento químico, símbolo Ca, de número atómico 20 (20 prótons e 20 elétrons) e massa atómica 40u.</p>
+                            </div>
+                            <div id="sc" class="desc-box">
+                                <h2>Sc</h2>
+                                <p>O escândio (em homenagem à (Escandinávia) é um elemento químico de símbolo Sc, número atómico 21 (21 prótons e 21 elétrons) e a massa atômica de 45 u.</p>
+                            </div>
+                            <div id="ti" class="desc-box">
+                                <h2>Ti</h2>
+                                <p>O titânio é um elemento químico de símbolo Ti, número atômico 22 (22 prótons e 22 elétrons) com massa atômica 47,90 u.</p>
+                            </div>
+                            <div id="v" class="desc-box">
+                                <h2>V</h2>
+                                <p>Vanádio (homenagem a deusa Vanadis) é um elemento químico, símbolo V, número atômico 23 (23 prótons e 23 elétrons) de massa atómica 50,94 u.</p>
+                            </div>
+                            <div id="cr" class="desc-box">
+                                <h2>Cr</h2>
+                                <p>Cromo, crómio ou crômio (do grego χρώμα, pronunciado como "chróma", significando cor) é um elemento químico de símbolo Cr, número atômico 24.</p>
+                            </div>
+                            <div id="mn" class="desc-box">
+                                <h2>Mn</h2>
+                                <p>O manganésio (Mn), também designado por manganês, é um elemento químico metálico pertencente à classe dos metais de transição, bi, tetra ou heptavalente.</p>
+                            </div>
+                            <div id="fe" class="desc-box">
+                                <h2>Fe</h2>
+                                <p>O ferro (do latim ferrum) é um elemento químico, símbolo Fe, de número atômico 26 (26 prótons e 26 elétrons) e massa atômica 56 u.</p>
+                            </div>
+                            <div id="co" class="desc-box">
+                                <h2>Co</h2>
+                                <p>O cobalto (do alemão Kobold, duende, demônio das minas) é um elemento químico, símbolo Co, número atômico 27 (27 prótons e 27 elétrons) e massa atómica 58.</p>
+                            </div>
+                            <div id="ni" class="desc-box">
+                                <h2>Ni</h2>
+                                <p>O níquel (Ni) é um elemento químico metálico pertencente à classe dos metais de transição, de cor branco-prateada, tenaz e magnético, que se localiza no grupo 10 e período 4 da Tabela Periódica.</p>
+                            </div>
+                            <div id="cu" class="desc-box">
+                                <h2>Cu</h2>
+                                <p>O cobre é um elemento químico de símbolo Cu (do latim cuprum), número atômico 29 (29 prótons e 29 elétrons) e de massa atómica 63,54 u.</p>
+                            </div>
+                            <div id="zn" class="desc-box">
+                                <h2>Zn</h2>
+                                <p>O zinco (Zn) é um elemento químico metálico pertencente à classe dos metais de transição, bivalente e de cor branco-azulada, que se localiza no grupo 12 e período 4 da Tabela Periódica.</p>
+                            </div>
+                            <div id="ga" class="desc-box">
+                                <h2>Ga</h2>
+                                <p>O gálio (Ga) é um elemento químico metálico, mono, di ou trivalente, de cor brilhante, mole, estável no ar e água, solúvel em ácidos e bases, que se localiza no grupo 13 e período 4 da Tabela Periódica.</p>
+                            </div>
+                            <div id="ge" class="desc-box">
+                                <h2>Ge</h2>
+                                <p>O germânio é um elemento químico de símbolo Ge , número atômico 32 (32 prótons e 32 elétrons) com massa atómica 72u.</p>
+                            </div>
+                            <div id="as" class="desc-box">
+                                <h2>As</h2>
+                                <p>O arsênio ou arsénio (do latim arsenium) é um elemento químico de símbolo As com número atômico 33 (33 prótons e 33 elétrons) e com massa atómica 75 u.</p>
+                            </div>
+                            <div id="se" class="desc-box">
+                                <h2>Se</h2>
+                                <p>O selénio (Se) é um elemento químico não metálico, di, tetra ou hexavalente, de cor vermelha ou acinzentada, que se localiza no grupo 16 e período 4 da Tabela Periódica. Possui número atómico 34 e massa atómica 78,96.</p>
+                            </div>
+                            <div id="br" class="desc-box">
+                                <h2>Br</h2>
+                                <p>O bromo (do grego: bromos, fétido) é um elemento químico de símbolo Br, número atômico 35 (35 prótons e 35 elétrons) e com massa atómica igual a 79,9 u.</p>
+                            </div>
+                            <div id="kr" class="desc-box">
+                                <h2>Kr</h2>
+                                <p>Recebe o nome de Criptônio um gás nobre, incolor, inodoro, insípido e inerte (de pequena reatividade). Seu símbolo é Kr, e possui o número atômico 36.</p>
+                            </div>
+                            <div id="rb" class="desc-box">
+                                <h2>Rb</h2>
+                                <p>O rubídio é um elemento químico de símbolo Rb de número atômico 37 (37 prótons e 37 elétrons).</p>
+                            </div>
+                            
+                            <div id="sr" class="desc-box">
+                                <h2>Sr</h2>
+                                <p>O estrôncio é um elemento químico de símbolo Sr de número atômico 38 (38 prótons e 38 elétrons) e de massa atómica igual a 87,6 u.</p>
+                            </div>
+                            <div id="y" class="desc-box">
+                                <h2>Y</h2>
+                                <p>O ítrio apresenta-se como um metal de coloração prateada, brilhante e estável em atmosfera contendo ar, surgindo instabilidade quando o metal é pulverizado.</p>
+                            </div>
+                            <div id="zr" class="desc-box">
+                                <h2>Zr</h2>
+                                <p>O zircônio ou zircónio (do francês zircon, zircão) é um elemento químico de símbolo Zr de número atômico 40 (40 prótons e 40 elétrons).</p>
+                            </div>
+                            <div id="nb" class="desc-box">
+                                <h2>Nb</h2>
+                                <p>Propriedades químicas: é o elemento químico de número atômico 41 e massa atômica 92,9 u. Seu símbolo é Nb.</p>
+                            </div>
+                            <div id="mo" class="desc-box">
+                                <h2>Mo</h2>
+                                <p>O molibdênio é um elemento químico classificado como metal de transição, identificado pelo símbolo Mo e número atômico (Z) 42.</p>
+                            </div>
+                            <div id="tc" class="desc-box">
+                                <h2>Tc</h2>
+                                <p>Entre os metais de transição está o Tecnécio, um elemento químico de símbolo “Tc” e pertencente ao grupo 7 da tabela periódica.</p>
+                            </div>
+                            <div id="ru" class="desc-box">
+                                <h2>Ru</h2>
+                                <p>De número atómico 44 e símbolo químico Ru, este elemento é um metal de transição, membro do oitavo grupo da tabela periódica, também conhecido como o grupo da platina</p>
+                            </div>
+                            <div id="rh" class="desc-box">
+                                <h2>Rh</h2>
+                                <p>O ródio é um elemento químico de símbolo Rh de número atômico 45 (45 prótons e 45 elétrons) e de massa atômica igual a 102,9 u.</p>
+                            </div>
+                            <div id="pd" class="desc-box">
+                                <h2>Pd</h2>
+                                <p>O paládio (Pd) é um metal de transição externa do grupo 10 da tabela periódica. Possui número atômico Z = 46 (prótons e elétrons).</p>
+                            </div>
+                            
+                       
+                    </td>
+
+                    <td>
+                        <div onmouseout="hide('b')" onmouseover="show('b')" class="square semimetals td-effect">
+                            <div class="num">5</div>
+                            <div class="char">B</div>
+                        </div>
+                    </td>
+                    <td>
+                    <div onmouseout="hide('c')" onmouseover="show('c')" class="square nometals td-effect">
+                            <div class="num">6</div>
+                            <div class="char">C</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div onmouseout="hide('n')" onmouseover="show('n')" class="square nometals td-effect">
+                            <div class="num">7</div>
+                            <div class="char">N</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div onmouseout="hide('o')" onmouseover="show('o')" class="square nometals td-effect">
+                            <div class="num">8</div>
+                            <div class="char">O</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div onmouseout="hide('f')" onmouseover="show('f')" class="square lanthanides td-effect">
+                            <div class="num">9</div>
+                            <div class="char">F</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div onmouseout="hide('ne')" onmouseover="show('ne')" class="square noblegases td-effect">
+                            <div class="num">10</div>
+                            <div class="char">Ne</div>
+                        </div>
+                    </td>
+            </tr>
+            <tr>
+                <td>
+                    <div onmouseout="hide('na')" onmouseover="show('na')" class="square alkalinemetals td-effect">
+                        <div class="num">11</div>
+                        <div class="char">Na</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('mg')" onmouseover="show('mg')" class="square alkaline-earthmetals td-effect">
+                        <div class="num">12</div>
+                        <div class="char">Mg</div>
+                    </div>
+                </td>
+                <!-- <td class="white-space desc-box"></td> -->
+                <td>
+                    <div onmouseout="hide('al')" onmouseover="show('al')" class="square othermetals td-effect">
+                        <div class="num">13</div>
+                        <div class="char">Al</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('si')" onmouseover="show('si')" class="square semimetals td-effect">
+                    <div class="num">14</div>
+                        <div class="char">Si</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('p')" onmouseover="show('p')" class="square nometals td-effect">
+                        <div class="num">15</div>
+                        <div class="char">P</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('s')" onmouseover="show('s')" class="square nometals td-effect">
+                        <div class="num">16</div>
+                        <div class="char">S</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('cl')" onmouseover="show('cl')"  class="square lanthanides td-effect">
+                        <div class="num">17</div>
+                        <div class="char">Cl</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('ar')" onmouseover="show('ar')" class="square noblegases td-effect">
+                        <div class="num">18</div>
+                        <div class="char">Ar</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div onmouseout="hide('k')" onmouseover="show('k')" class="square alkalinemetals td-effect">
+                        <div class="num">19</div>
+                        <div class="char">K</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('ca')" onmouseover="show('ca')" class="square alkaline-earthmetals td-effect">
+                        <div class="num">20</div>
+                        <div class="char">Ca</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('ca')" onmouseover="show('ca')" class="square transitionmetals td-effect">
+                        <div class="num">21</div>
+                        <div class="char">Sc</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('ti')" onmouseover="show('ti')" class="square transitionmetals td-effect">
+                        <div class="num">22</div>
+                        <div class="char">Ti</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('v')" onmouseover="show('v')" class="square transitionmetals td-effect" >
+                        <div class="num">23</div>
+                        <div class="char">V</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('cr')" onmouseover="show('cr')" class="square transitionmetals td-effect">
+                        <div class="num">24</div>
+                        <div class="char">Cr</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('mn')" onmouseover="show('mn')" class="square transitionmetals td-effect">
+                        <div class="num">25</div>
+                        <div class="char">Mn</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('fe')" onmouseover="show('fe')"  class="square transitionmetals td-effect">
+                        <div class="num">26</div>
+                        <div class="char">Fe</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('co')" onmouseover="show('co')" class="square transitionmetals td-effect">
+                        <div class="num">27</div>
+                        <div class="char">Co</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('ni')" onmouseover="show('ni')" class="square transitionmetals td-effect">
+                        <div class="num">28</div>
+                        <div class="char">Ni</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('cu')" onmouseover="show('cu')" class="square transitionmetals td-effect">
+                        <div class="num">29</div>
+                        <div class="char">Cu</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('zn')" onmouseover="show('zn')" class="square transitionmetals td-effect">
+                        <div class="num">30</div>
+                        <div class="char">Zn</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('ga')" onmouseover="show('ga')" class="square othermetals td-effect">
+                        <div class="num">31</div>
+                        <div class="char">Ga</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('ge')" onmouseover="show('ge')" class="square semimetals td-effect">
+                        <div class="num">32</div>
+                        <div class="char">Ge</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('as')" onmouseover="show('as')" class="square semimetals td-effect">
+                        <div class="num">33</div>
+                        <div class="char">As</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('se')" onmouseover="show('se')" class="square nometals td-effect">
+                        <div class="num">34</div>
+                        <div class="char">Se</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('br')" onmouseover="show('br')" class="square lanthanides td-effect">
+                        <div class="num">35</div>
+                        <div class="char">Br</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('kr')" onmouseover="show('kr')" class="square noblegases td-effect">
+                        <div class="num">36</div>
+                        <div class="char">Kr</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div onmouseout="hide('rb')" onmouseover="show('rb')"  class="square alkalinemetals td-effect">
+                        <div class="num">37</div>
+                        <div class="char">Rb</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('sr')" onmouseover="show('sr')"  class="square alkaline-earthmetals td-effect">
+                        <div class="num">38</div>
+                        <div class="char">Sr</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('y')" onmouseover="show('y')" class="square transitionmetals td-effect">
+                        <div class="num">39</div>
+                        <div class="char">Y</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('zr')" onmouseover="show('zr')" class="square transitionmetals td-effect">
+                        <div class="num">40</div>
+                        <div class="char">Zr</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('nb')" onmouseover="show('nb')" class="square transitionmetals td-effect">
+                        <div class="num">41</div>
+                        <div class="char">Nb</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('mo')" onmouseover="show('mo')" class="square transitionmetals td-effect">
+                        <div class="num">42</div>
+                        <div class="char">Mo</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('tc')" onmouseover="show('tc')" class="square transitionmetals td-effect">
+                        <div class="num">43</div>
+                        <div class="char">Tc</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('ru')" onmouseover="show('ru')" class="square transitionmetals td-effect">
+                        <div class="num">44</div>
+                        <div class="char">Ru</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('rh')" onmouseover="show('rh')" class="square transitionmetals td-effect">
+                        <div class="num">45</div>
+                        <div class="char">Rh</div>
+                    </div>
+                </td>
+                <td>
+                    <div onmouseout="hide('pd')" onmouseover="show('pd')"  class="square transitionmetals td-effect">
+                        <div class="num">46</div>
+                        <div class="char">Pd</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square transitionmetals td-effect">
+                        <div class="num">47</div>
+                        <div class="char">Ag</div>
+                    </div>
+                </td>
+                <td >
+                    <div class="square transitionmetals td-effect">
+                        <div class="num">48</div>
+                        <div class="char">Cd</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square othermetals td-effect">
+                        <div class="num">49</div>
+                        <div class="char">In</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square othermetals td-effect">
+                        <div class="num">50</div>
+                        <div class="char">Sn</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square semimetals td-effect">
+                        <div class="num">51</div>
+                        <div class="char">Sb</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square semimetals td-effect">
+                        <div class="num">52</div>
+                        <div class="char">Te</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square lanthanides td-effect">
+                        <div class="num">53</div>
+                        <div class="char">I</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square noblegases td-effect">
+                        <div class="num">54</div>
+                        <div class="char">Xe</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="square alkalinemetals td-effect">
+                        <div class="num">55</div>
+                        <div class="char">Cs</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square alkaline-earthmetals td-effect">
+                        <div class="num">56</div>
+                        <div class="char">Ba</div>
+                    </div>
+                </td>
+                <td></td>
+                <td>
+                    <div class="square transitionmetals td-effect">
+                        <div class="num">72</div>
+                        <div class="char">Hf</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square transitionmetals td-effect">
+                        <div class="num">73</div>
+                        <div class="char">Ta</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square transitionmetals td-effect">
+                        <div class="num">74</div>
+                        <div class="char">W</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square transitionmetals td-effect">
+                        <div class="num">75</div>
+                        <div class="char">Re</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square transitionmetals td-effect">
+                        <div class="num">76</div>
+                        <div class="char">Os</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square transitionmetals td-effect">
+                        <div class="num">77</div>
+                        <div class="char">Ir</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square transitionmetals td-effect">
+                        <div class="num">78</div>
+                        <div class="char">Pt</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square transitionmetals td-effect">
+                        <div class="num">79</div>
+                        <div class="char">Au</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square transitionmetals td-effect">
+                        <div class="num">80</div>
+                        <div class="char">Hg</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square othermetals td-effect">
+                        <div class="num">81</div>
+                        <div class="char">Tl</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square othermetals td-effect">
+                        <div class="num">82</div>
+                        <div class="char">Pb</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square othermetals td-effect">
+                        <div class="num">83</div>
+                        <div class="char">Bi</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square semimetals td-effect">
+                        <div class="num">84</div>
+                        <div class="char">Po</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square lanthanides td-effect">
+                        <div class="num">85</div>
+                        <div class="char">At</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square noblegases td-effect">
+                        <div class="num">86</div>
+                        <div class="char">Rn</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="square alkalinemetals td-effect">
+                        <div class="num">87</div>
+                        <div class="char">Fr</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square alkaline-earthmetals td-effect">
+                        <div class="num">88</div>
+                        <div class="char">Ra</div>
+                    </div>
+                </td>
+                <td></td>
+                <td>
+                    <div class="square transitionmetals td-effect">
+                        <div class="num">104</div>
+                        <div class="char">Rf</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square transitionmetals td-effect">
+                        <div class="num">105</div>
+                        <div class="char">Db</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square transitionmetals td-effect">
+                        <div class="num">106</div>
+                        <div class="char">Sg</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square transitionmetals td-effect">
+                        <div class="num">107</div>
+                        <div class="char">Bh</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square transitionmetals td-effect">
+                        <div class="num">108</div>
+                        <div class="char">Hs</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square transitionmetals td-effect">
+                        <div class="num">109</div>
+                        <div class="char">Mt</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square transitionmetals td-effect">
+                        <div class="num">110</div>
+                        <div class="char">Ds</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square transitionmetals td-effect">
+                        <div class="num">111</div>
+                        <div class="char">Rg</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square transitionmetals td-effect">
+                        <div class="num">112</div>
+                        <div class="char">Cn</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square othermetals td-effect">
+                        <div class="num">113</div>
+                        <div class="char">Nh</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square othermetals td-effect">
+                        <div class="num">114</div>
+                        <div class="char">Fl</div>
+                    </div>
+                </td>
+                <td class="square othermetals td-effect">
+                    <div class="num">115</div>
+                    <div class="char">Mc</div>
+                </td>
+                <td>
+                    <div class="square othermetals td-effect">
+                        <div class="num">116</div>
+                        <div class="char">Lv</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square lanthanides td-effect">
+                        <div class="num">117</div>
+                        <div class="char">Ts</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square noblegases td-effect">
+                        <div class="num">118</div>
+                        <div class="char">Og</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="white-space  reduce-space" colspan="18"></td>
+            </tr>
+            <tr>
+                <td class="white-space" colspan="3"></td>
+                <td>
+                    <div class="square lanthanides td-effect">
+                        <div class="num">57</div>
+                        <div class="char">La</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square lanthanides td-effect">
+                        <div class="num">58</div>
+                        <div class="char">Ce</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square lanthanides td-effect">
+                        <div class="num">59</div>
+                        <div class="char">Pr</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square lanthanides td-effect">
+                        <div class="num">60</div>
+                        <div class="char">Nd</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square lanthanides td-effect">
+                        <div class="num">61</div>
+                        <div class="char">Pm</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square lanthanides td-effect">
+                        <div class="num">62</div>
+                        <div class="char">Sm</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square lanthanides td-effect">
+                        <div class="num">63</div>
+                        <div class="char">Eu</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square lanthanides td-effect">
+                        <div class="num">64</div>
+                        <div class="char">Gd</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square lanthanides td-effect">
+                        <div class="num">65</div>
+                        <div class="char">Tb</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square lanthanides td-effect">
+                        <div class="num">66</div>
+                        <div class="char">Dy</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square lanthanides td-effect">
+                        <div class="num">67</div>
+                        <div class="char">Ho</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square lanthanides td-effect">
+                        <div class="num">68</div>
+                        <div class="char">Er</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square lanthanides td-effect">
+                        <div class="num">69</div>
+                        <div class="char">Tm</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square lanthanides td-effect">
+                        <div class="num">70</div>
+                        <div class="char">Yb</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square lanthanides td-effect">
+                        <div class="num">71</div>
+                        <div class="char">Lu</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="white-space" colspan="3"></td>
+                <td>
+                    <div class="square actinides td-effect">
+                        <div class="num">89</div>
+                        <div class="char">Ac</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square actinides td-effect">
+                        <div class="num">90</div>
+                        <div class="char">Th</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square actinides td-effect">
+                        <div class="num">91</div>
+                        <div class="char">Pa</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square actinides td-effect">
+                        <div class="num">92</div>
+                        <div class="char">U</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square actinides td-effect">
+                        <div class="num">93</div>
+                        <div class="char">Np</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square actinides td-effect">
+                        <div class="num">94</div>
+                        <div class="char">Pu</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square actinides td-effect">
+                        <div class="num">95</div>
+                        <div class="char">Am</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square actinides td-effect">
+                        <div class="num">96</div>
+                        <div class="char">Cm</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square actinides td-effect">
+                        <div class="num">97</div>
+                        <div class="char">Bk</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square actinides td-effect">
+                        <div class="num">98</div>
+                        <div class="char">Cf</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square actinides td-effect">
+                        <div class="num">99</div>
+                        <div class="char">Es</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square actinides td-effect">
+                        <div class="num">100</div>
+                        <div class="char">Fm</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square actinides td-effect">
+                        <div class="num">101</div>
+                        <div class="char">Md</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square actinides td-effect">
+                        <div class="num">102</div>
+                        <div class="char">No</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="square actinides td-effect">
+                        <div class="num">103</div>
+                        <div class="char">Lr</div>
+                    </div>
+                </td>
+            </tr>
+        
+        </table>
+    </div>
+</body>
+</html>
